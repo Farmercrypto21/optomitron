@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ghost Hunter</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        #game {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        #background {
+            width: 200vw; /* Double width for seamless loop */
+            height: 100vh;
+            background: url('https://cdn.glitch.global/dacc699f-e499-49cc-a99e-62079fdfadf6/background-test.png?v=1749046089706') repeat-x;
+            background-size: auto 100%;
+            position: absolute;
+            animation: scrollBackground 20s linear infinite;
+        }
+        #player {
+            width: 80px;
+            height: 80px;
+            background: url('https://cdn.glitch.global/dacc699f-e499-49cc-a99e-62079fdfadf6/exorcist-profile.PNG?v=1749035012684') no-repeat center/cover;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+        .ghost {
+            width: 60px;
+            height: 60px;
+            background: url('ghost.png') no-repeat center/cover;
+            position: absolute;
+            right: -60px; /* Start off-screen */
+            top: 30%;
+            z-index: 5;
+            cursor: pointer;
+        }
+        @keyframes scrollBackground {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); } /* Loop half-way */
+        }
+    </style>
+</head>
+<body>
+    <div id="game">
+        <div id="background"></div>
+        <div id="player"></div>
+        <!-- Ghosts spawn here -->
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
