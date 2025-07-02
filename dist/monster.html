@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GHOST HUNTERS GUILD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/assets/styles-CcYCPCde.css">
+</head>
+<body>
+  <!-- Side banners -->
+  <img alt="Left Banner" class="side-banner left-banner" data-image-id="banner">
+  <img alt="Right Banner" class="side-banner right-banner" data-image-id="banner">
+
+  <div class="container">
+     <div class="top">
+      <img id="ticker-left" class="ticker-icon" data-image-id="ticker" alt="Ticker Left">
+      <h1 id="mission-title">Ghost Hunters Guild</h1>
+      <img id="ticker-right" class="ticker-icon" data-image-id="ticker" alt="Ticker Right">
+    </div>
+
+    <main class="main-container">
+      <div class="lore-container">
+        <h2 class="lore-title">Ghosthunters' Monsters: A Glimpse into the Unknown</h2>
+        <p class="lore-text">
+          To survive as a Ghosthunter, you must learn the strengths and vulnerabilities of every spectral entity you face. 
+        </p>
+        <img alt="ghost" class="ghost-image" data-image-id="ghost">
+        <p>Each ghost operates by its own cursed logic&mdash;some are bound by objects, others by emotions, and a few by forgotten rituals. Knowing these traits can mean the difference between salvation and a gruesome end.</p>
+      </div>
+      <div class="enemies-container2" id="enemies-container2">
+        <!-- Enemies populated dynamically by script.js -->
+      </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <button class="nav-button" onclick="window.location.href='index.html'">&nbsp;&#127968;&nbsp; Home</button>
+      <button class="nav-button" onclick="window.location.href='inventory.html'">&nbsp;&#128302;&nbsp; Inventory</button>
+      <button class="nav-button" onclick="window.location.href='skillweb.html'">&nbsp;&#128214;&nbsp; Grim Veins</button>
+      <button class="nav-button" onclick="window.location.href='map.html'">&nbsp;&#128506;&nbsp; Map</button>
+      <button class="nav-button" onclick="window.location.href='mission.html'">&nbsp;&#128220;&nbsp; Missions</button>
+      <button class="nav-button active" onclick="window.location.href='monster.html'">&nbsp;&#128214;&nbsp; Monsters</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Log image loading errors and population status
+    document.addEventListener('DOMContentLoaded', () => {
+      const enemiesContainer = document.getElementById('enemies-container');
+      console.log('Bestiary page loaded. Enemies container:', enemiesContainer ? 'Found' : 'Not found');
+      if (!enemiesContainer) {
+        console.error('Enemies container (#enemies-container) not found!');
+      }
+      document.querySelectorAll('img').forEach(img => {
+        img.onerror = () => {
+          console.error(`Failed to load image: ${img.src}, alt: ${img.alt}, data-image-id: ${img.getAttribute('data-image-id')}`);
+        };
+        img.onload = () => {
+          console.log(`Loaded image: ${img.src}, alt: ${img.alt}`);
+        };
+      });
+    });
+  </script>
+</body>
+</html>

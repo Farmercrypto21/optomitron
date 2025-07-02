@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ghost Hunters Guild - Mission</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/assets/styles-CcYCPCde.css">
+</head>
+<body>
+  <!-- Side banners -->
+  <img alt="Left Banner" class="side-banner left-banner" data-image-id="banner">
+  <img alt="Right Banner" class="side-banner right-banner" data-image-id="banner">
+
+  <!-- Top Header -->
+  <div class="top">
+    <img id="ticker-left" class="ticker-icon" data-image-id="ticker" alt="Ticker Left">
+    <h1 id="mission-title">Ghost Hunters Guild</h1>
+    <img id="ticker-right" class="ticker-icon" data-image-id="ticker" alt="Ticker Right">
+  </div>
+
+  <!-- Mission Container -->
+  <div class="mission-container">
+    <!-- Left Column (30%) -->
+    <div class="left-container">
+      <!-- Level Details Container -->
+      <div class="level-details">
+        <h2 id="level-name">Selected Level</h2>
+        <p id="level-description">Description of the selected level.</p>
+        <div class="enemy-details">
+          <h3>Enemies</h3>
+          <div class="enemies-container2" id="enemies-container2"></div>
+        </div>
+      </div>
+      <!-- Hunter Container -->
+      <div class="hunter-container">
+        <div id="hunter-details" data-hunter-name="Select a Hunter">
+          <p id="player-level">Player: Level 1</p>
+          <div class="hunter-content">
+            <!-- Hunter Image and Bars -->
+            <div class="hunter-image-and-bars">
+              <img id="hunter-image" alt="Hunter Image" class="hunter-image">
+              <div class="bars-container">
+                <div class="hunter-life-bar" data-health="100">
+                  <div class="health-bar-fill"></div>
+                  <span class="health-text">100%</span>
+                </div>
+                <div class="xp-container">
+                  <div class="xp-bar">
+                    <div id="xp-bar-fill"></div>
+                  </div>
+                  <div id="xp-text">0/150 XP</div>
+                </div>
+              </div>
+            </div>
+            <!-- Hunter Stats Table -->
+            <div class="hunter-stats-table">
+              <table id="stats-table">
+                
+                <tbody>
+                  
+                  <tr>
+                    <td>Health</td>
+                    <td id="stat-health">100</td>
+                  </tr>
+                  <tr>
+                    <td>Defense</td>
+                    <td id="stat-defense">0</td>
+                  </tr>
+                  <tr>
+                    <td>Speed</td>
+                    <td id="stat-speed">0</td>
+                  </tr>
+                  <tr>
+                    <td>Dodge</td>
+                    <td id="stat-dodge">0%</td>
+                  </tr>
+                  <tr>
+                    <td>Damage</td>
+                    <td id="stat-damage">0</td>
+                  </tr>
+                  <tr>
+                    <td>Crit Damage</td>
+                    <td id="stat-crit-damage">0</td>
+                  </tr>
+                  <tr>
+                    <td>Crit Chance</td>
+                    <td id="stat-crit-chance">0</td>
+                  </tr>
+                  </tbody>
+              </table>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="bonus-malus">
+        <h3>BONUS / MALUS</h3>
+        <div class="bonus-malus-content">
+          <div class="equipment-effect weapon-effect">
+            <p><strong>Weapon:</strong></p>
+            <div class="equipment-image-container">
+              <img id="weapon-icon" src="" alt="Weapon Icon" class="equipment-icon-small">
+            </div>
+            <div class="effect-details">
+              <p><span class="bonus">Bonus: N/A</span></p>
+              <p><span class="malus">Malus: N/A</span></p>
+            </div>
+          </div>
+          <div class="equipment-effect shield-effect">
+  <p><strong>Shield:</strong></p>
+  <img id="shield-icon" src="" alt="Shield Icon" class="equipment-icon-small">
+  <div class="effect-details">
+    <p><span class="bonus">Bonus: N/A</span></p>
+    <p><span class="malus">Malus: N/A</span></p>
+  </div>
+</div>
+        </div>
+        <div>
+          <!-- XP and Ectos will be dynamically added here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column (70%) -->
+    <div class="right-container">
+      <!-- Background Image Container -->
+     <div class="new-container">
+    <div id="background"></div>
+           <img class="hunter-image mission-hunter-image" id="mission-hunter-image" alt="Hunter" style="display: none;"> <!-- Hidden until mission starts -->
+    <h3 id="encounter-text">Encounter Area</h3>
+    <div id="game"></div>
+  </div>
+      <!-- Mission Log Container -->
+      <!-- Mission Log Container -->
+<div class="mission-log-container">
+  <div class="mission-log-header">
+    <h3 id="mission-log-title">Mission Log</h3>
+    <div class="mission-controls">
+      <button class="mission-button" id="start-mission-button">Start Mission</button>
+            <button class="mission-button" id="stop-mission-button">Stop Mission</button>
+
+      <span class="mission-timer" id="mission-timer">Time Left: 5:00</span>
+      <span class="mission-timer" id="recovery-timer" style="display: none;">Recovery Time: 3:00</span>
+    </div>
+  </div>
+  <div id="mission-log">
+    <div class="mission-log-content">
+      <!-- Log entries appended via JavaScript -->
+    </div>
+      </div>
+  
+</div>
+     <!-- Mission Rewards Container -->
+  <div id="rewards-container">
+  <h3>Rewards</h3>
+  <div id="rewards-content">
+    <!-- XP and Ectos will be dynamically added here -->
+  </div>
+</div>
+    </div>
+  </div>
+  
+  
+
+  <!-- Timers -->
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

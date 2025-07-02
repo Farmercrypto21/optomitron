@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ghost Hunters: Haunted Places</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/assets/styles-CcYCPCde.css">
+</head>
+<body>
+   <!-- Side banners -->
+  <img src="https://cdn.glitch.global/dacc699f-e499-49cc-a99e-62079fdfadf6/ghg.png?v=1747641326390" alt="Left Banner" class="side-banner left-banner">
+  <img src="https://cdn.glitch.global/dacc699f-e499-49cc-a99e-62079fdfadf6/ghg.png?v=1747641326390" alt="Right Banner" class="side-banner right-banner">
+
+  <div class="container">
+    <!-- Top Section for the Title -->
+     <div class="top">
+      <img id="ticker-left" class="ticker-icon" data-image-id="ticker" alt="Ticker Left">
+      <h1 id="mission-title">Ghost Hunters Guild</h1>
+      <img id="ticker-right" class="ticker-icon" data-image-id="ticker" alt="Ticker Right">
+    </div>
+
+    <!-- Main Section for the Skill Tree -->
+    <div class="main">
+      <div class="skill-tree">
+        <h2 class="skill-tree-title">GRIM VEINS</h2>
+              <p>
+        "Grim Veins"
+Dark vitality pulses through these corrupted talents, twisting flesh and bone into monstrous strength. Enhance your attacks with necrotic fury, sprout jagged bone spikes, and endure pain that would kill mortal men. But with each upgrade, your humanity withers a little more...</p>
+             <img src="https://cdn.glitch.global/dacc699f-e499-49cc-a99e-62079fdfadf6/ghost.png?v=1747138916736" alt="ghost" class="ghost-image">
+
+        <p>
+         The Corruption of Flesh and Fortitude
+
+"Power demands sacrifice&mdash;but not always your own."
+
+This skill tree embodies dark bio-sorcery, where the user&rsquo;s very body becomes a weapon&mdash;and a battleground. By tapping into cursed vitality, you mutate your flesh, harden your bones, and push past mortal limits... for a price.</p>
+      
+        <div class="skill-nodes">
+          <!-- Strength Node -->
+          <div class="skill-node" data-skill="Strength">
+            <div class="skill-icon">&#128170;</div>
+            <h3 class="skill-name"> Strength</h3>
+            <p class="skill-level" data-skill="Strength">Level 1/10</p>
+            <p class="skill-description">Enhances your physical power, allowing you to banish spirits with greater force and withstand their attacks.</p>
+           <button class="selectbutton" onclick="selectSkill('Strength')">Select</button>
+          </div>
+
+          <!-- Speed Node -->
+          <div class="skill-node"  data-skill="Speed">
+            <div class="skill-icon">&#9889;</div>
+            <h3 class="skill-name"> Speed </h3>
+            <p class="skill-level" data-skill="Speed">Level 1/10</p>
+            <p class="skill-description">Increases your agility, helping you evade spectral entities and navigate haunted environments more effectively.</p>
+           <button class="selectbutton" onclick="selectSkill('Speed')">Select</button>
+          </div>
+  
+          <!-- Spirit Energy Node -->
+          <div class="skill-node" data-skill="Spirit Energy">
+            <div class="skill-icon">&#10024;</div>
+            <h3 class="skill-name">Spirit Energy </h3>
+            <p class="skill-level" data-skill="Spirit Energy">Level 1/10</p>
+            <p class="skill-description">Your vital essence, a reservoir of spiritual resilience that shields you from the draining effects of the spectral realm. Higher Spirit Energy allows you to endure longer encounters with malevolent entities.</p>
+          <button class="selectbutton" onclick="selectSkill('Spirit Energy')">Select</button>
+          </div>
+
+          <!-- Occult Knowledge Node -->
+          <div class="skill-node">
+            <div class="skill-icon" data-skill="Occult Knowledge">&#128220;</div>
+            <h3 class="skill-name"> Occult Knowledge </h3>
+            <p class="skill-level" data-skill="Occult Knowledge">Level 1/10</p>
+            <p class="skill-description">Deepens your understanding of ancient rituals and lore, improving your effectiveness in exorcisms and investigations.</p>
+           <button class="selectbutton" onclick="selectSkill('Occult Knowledge')">Select</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <button class="nav-button" onclick="window.location.href='index.html'">
+      &nbsp;&#127968;&nbsp; Home
+    </button>
+      <button class="nav-button" onclick="window.location.href='inventory.html'">
+        &nbsp;&#128302;&nbsp; Inventory
+      </button>
+      <button class="nav-button" onclick="window.location.href='skillweb.html'">
+        &nbsp;&#128214;&nbsp; Grim Veins
+      </button>
+      <button class="nav-button" onclick="window.location.href='map.html'">
+        &nbsp;&#128506;&nbsp; Haunted Map
+      </button>
+      <button class="nav-button" onclick="window.location.href='mission.html'">
+        &nbsp;&#128220;&nbsp; Mission
+      </button>
+      <button class="nav-button" onclick="window.location.href='liber-monstrorum.html'">
+        &nbsp;&#128214;&nbsp; Liber Monstrorum
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

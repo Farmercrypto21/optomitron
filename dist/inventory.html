@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ghost Hunters Guild</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/assets/styles-CcYCPCde.css">
+</head>
+<body>
+  
+<!-- Side banners -->
+  <img alt="Left Banner" class="side-banner left-banner" data-image-id="banner">
+  <img alt="Right Banner" class="side-banner right-banner" data-image-id="banner">
+
+  <div class="container">
+    <!-- Top Section for the Title -->
+     <div class="top">
+      <img id="ticker-left" class="ticker-icon" data-image-id="ticker" alt="Ticker Left">
+      <h1 id="mission-title">Ghost Hunters Guild</h1>
+      <img id="ticker-right" class="ticker-icon" data-image-id="ticker" alt="Ticker Right">
+    </div>
+    <h2 class="character-selection-title">Choose Your Hunter and Equipment</h2>
+    <p class="quote">"We don&rsquo;t hunt ghosts. We erase them."</p>
+    <div class="rewards-section">
+      <h2 class="rewards-title">Prepare for the Hunt</h2>
+      <p class="rewards-text">Select your hunter, one weapon, and one shield to face the supernatural. Your choices will define your fate.</p>
+      <hr class="rewards-divider">
+      <p class="rewards-footer">Choose wisely...</p>
+    </div>
+
+    <!-- Main Selection Section -->
+    <div class="selection-container">
+      <!-- Hunter Selection Section -->
+      <div class="hunter-selection">
+        <h3 class="section-title">Hunters</h3>
+        <div class="character-list">
+          <!-- Character 1 -->
+          <div class="character-container">
+            <div class="lore-item">
+              <img src="https://cdn.glitch.global/dacc699f-e499-49cc-a99e-62079fdfadf6/exorcist.png?v=1747406189254" alt="Character 1" class="lore-image">
+              <div class="lore-attributes">
+                <h3>"Father Dave" Langford</h3>
+                <p><strong>Role:</strong> Exorcist</p>
+                <p><strong>Skill:</strong> Performs holy rites to banish demons and weaken their influence</p>
+                <p>"The Church says &lsquo;Reverend Langford,&rsquo; but when you&rsquo;re knee-deep in a demonic infestation, formalities go out the window."</p>
+              </div>
+            </div>
+             <div class="hunter-stats" id="exorcist-stats"></div>
+            <button class="select-character-button" onclick="selectCharacter('Father Dave Langford')">Select</button>
+          </div>
+          <!-- Character 2 -->
+          <div class="character-container">
+            <div class="lore-item">
+              <img src="https://cdn.glitch.global/dacc699f-e499-49cc-a99e-62079fdfadf6/occultist.png?v=1747479116168" alt="Character 2" class="lore-image">
+              <div class="lore-attributes">
+                <h3>The Blacklisted Inquisitor</h3>
+                <p><strong>Role:</strong> Occultist</p>
+                <p><strong>Skill:</strong> The Inquisitor spins the Codex overhead, its chains forming a burning sigil in the air</p>
+                <p>"The ink is dry, but your screams will keep these pages fresh. So sing, worm - sing until your voice joins the chorus bound within!"</p>
+              </div>
+            </div>
+                         <div class="hunter-stats" id="occultist-stats"></div>
+            <button class="select-character-button" onclick="selectCharacter('The Blacklisted Inquisitor')">Select</button>
+          </div>
+          <!-- Character 3 -->
+          <div class="character-container">
+            <div class="lore-item">
+              <img src="https://cdn.glitch.global/dacc699f-e499-49cc-a99e-62079fdfadf6/specialist.png?v=1747479030924" alt="Character 3" class="lore-image">
+              <div class="lore-attributes">
+                <h3>Vega "Overclock" Rook</h3>
+                <p><strong>Role:</strong> Tech Specialist</p>
+                <p><strong>Skill:</strong> The specialist fires both proton blasters in parallel, creating a sustained energy bridge between the streams</p>
+                <p>"The Hadron Twins don&rsquo;t just fire&mdash;they rewrite the rules. You want suppression? I&rsquo;ll give you a sustained energy bridge straight to oblivion."</p>
+              </div>
+            </div>
+              <div class="hunter-stats" id="tech specialist-stats"></div>
+            <button class="select-character-button" onclick="selectCharacter('Vega Overclock Rook')">Select</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Equipment Selection Section -->
+      <div class="equipment-selection">
+        <div class="hunter-name-container">
+
+            <div class="hunter-specs">
+
+    <div id="hunter-details" class="equipment-details" >
+      <h3 id="selected-hunter-name">None</h3> <!-- Added element for hunter name -->
+      <img id="hunter-image" src="" alt="Hunter Icon" class="equipment-icon" >
+      <p style="display: none;"><strong>Role:</strong> <span id="hunter-role">N/A</span></p>
+    </div>
+    <div id="weapon-details" class="equipment-details">
+      <h3 id="selected-weapon-name">None</h3> <!-- Added element for weapon name -->
+      <img id="weapon-icon" src="" alt="Weapon Icon" class="equipment-icon" >
+      <p><strong>Bonus:</strong> <span id="weapon-bonus">N/A</span></p>
+      <p><strong>Malus:</strong> <span id="weapon-malus">N/A</span></p>
+    </div>
+    <div id="shield-details" class="equipment-details">
+            <h3 id="selected-shield-name">None</h3> <!-- Added element for shield name -->
+      <img id="shield-icon" src="" alt="Shield Icon" class="equipment-icon" >
+      <p><strong>Bonus:</strong> <span id="shield-bonus">N/A</span></p>
+      <p><strong>Malus:</strong> <span id="shield-malus">N/A</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-ribbon">
+  <span class="skill-emoji">💪 Strength</span>
+  <span class="skill-emoji">⚡ Speed</span>
+  <span class="skill-emoji">✨ Spirit Energy (Health)</span>
+  <span class="skill-emoji">📜 Occult Knowledge</span>
+  <span class="skill-emoji">🧠 Sanity</span>
+</div>
+        <div class="inventory-sections">
+          <!-- Weapons Section -->
+          <div class="weapons-container">
+            <h3 class="section-title">Weapons</h3>
+            <div class="items-row" id="weapons-row">
+              <!-- Weapons will be populated dynamically -->
+            </div>
+          </div>
+          <!-- Shields Section -->
+          <div class="shields-container">
+            <h3 class="section-title">Shields</h3>
+            <div class="items-row" id="shields-row">
+              <!-- Shields will be populated dynamically -->
+            </div>
+          </div>
+        </div>
+        <button class="confirm-selection-button" id="confirm-selection-button" onclick="confirmSelection()" disabled>Confirm Selection</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <button class="nav-button" onclick="window.location.href='index.html'">&nbsp;&#127968;&nbsp; Home</button>
+    <button class="nav-button" onclick="window.location.href='inventory.html'">&nbsp;&#128302;&nbsp; Inventory</button>
+    <button class="nav-button" onclick="window.location.href='skillweb.html'">&nbsp;&#128214;&nbsp; Grim Veins</button>
+    <button class="nav-button" onclick="window.location.href='map.html'">&nbsp;&#128506;&nbsp; Map</button>
+    <button class="nav-button" onclick="window.location.href='mission.html'">&nbsp;&#128220;&nbsp; Missions</button>
+    <button class="nav-button" onclick="window.location.href='monster.html'">&nbsp;&#128214;&nbsp; Monsters</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

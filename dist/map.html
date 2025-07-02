@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GHOST HUNTERS: HAUNTED MAP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" crossorigin href="/assets/styles-CcYCPCde.css">
+</head>
+<body>
+  <!-- Side banners -->
+  <img alt="Left Banner" class="side-banner left-banner" data-image-id="banner">
+  <img alt="Right Banner" class="side-banner right-banner" data-image-id="banner">
+
+  <!-- Top Header -->
+  <div class="top">
+    <img id="ticker-left" class="ticker-icon" data-image-id="ticker" alt="Ticker Left">
+    <h1 id="mission-title">Ghost Hunters Guild</h1>
+    <img id="ticker-right" class="ticker-icon" data-image-id="ticker" alt="Ticker Right">
+  </div>
+
+    <!-- Level Selection Section -->
+    <div class="level-container">
+      <h2 class="level-title">Select Your Mission Level</h2>
+      <p class="level-text">Choose your ground&mdash;where the air hums with whispers, where shadows cling too long, where something watches from just beyond sight. This is where you face the thing that should not be.</p>
+      <div class="carousel">
+  <div class="carousel-container" id="haunted-carousel">
+    <div class="carousel-track" id="carousel-track">
+      <p style="color: #ff0000; font-family: monospace; text-align: center; display: none;" id="carousel-error">Loading levels...</p>
+    </div>
+    
+  </div>
+      <button class="carousel-arrow left-arrow" id="carousel-left-arrow">
+      <span>&larr;</span>
+    </button>
+    <button class="carousel-arrow right-arrow" id="carousel-right-arrow">
+      <span>&rarr;</span>
+    </button>  
+</div>
+    </div>
+  
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <button class="nav-button" onclick="window.location.href='index.html'">&nbsp;&#127968;&nbsp; Home</button>
+    <button class="nav-button" onclick="window.location.href='inventory.html'">&nbsp;&#128302;&nbsp; Inventory</button>
+    <button class="nav-button" onclick="window.location.href='skillweb.html'">&nbsp;&#128214;&nbsp; Grim Veins</button>
+    <button class="nav-button" onclick="window.location.href='map.html'">&nbsp;&#128506;&nbsp; Map</button>
+    <button class="nav-button" onclick="window.location.href='mission.html'">&nbsp;&#128220;&nbsp; Missions</button>
+    <button class="nav-button" onclick="window.location.href='monster.html'">&nbsp;&#128214;&nbsp; Monsters</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

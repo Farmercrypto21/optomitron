@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ghost Hunters Guild</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/assets/styles-CcYCPCde.css">
+</head>
+<body>
+  <!-- Side banners -->
+  <img src="https://cdn.glitch.global/dacc699f-e499-49cc-a99e-62079fdfadf6/ghg.png?v=1747641326390" alt="Left Banner" class="side-banner left-banner">
+  <img src="https://cdn.glitch.global/dacc699f-e499-49cc-a99e-62079fdfadf6/ghg.png?v=1747641326390" alt="Right Banner" class="side-banner right-banner">
+
+  <div class="container">
+    <!-- Top Section for the Title -->
+    <div class="top">
+      <h1 id="page-title">Ghost Hunters Guild</h1>
+    </div>
+    <h2 class="character-selection-title">Choose Your Hunter</h2>
+    <p class="quote">"We don&rsquo;t hunt ghosts. We erase them."</p>
+    <p class="lore-text">
+      Their van has no logo. Their ads don&rsquo;t run in phone books. But when your child starts speaking in tongues or your walls bleed black sludge, you&rsquo;ll find their number. 
+      Scratched in bathroom stalls. Written on the back of hospital bracelets. Whispered by the few who survived.
+    </p>
+    <p>Just three words, but they mean everything: Ghost Hunters Guild.</p>
+    <img src="https://cdn.glitch.global/dacc699f-e499-49cc-a99e-62079fdfadf6/ghost.png?v=1747138916736" alt="ghost" class="ghost-image">
+    <p class="lore-text">They&rsquo;re not heroes. They&rsquo;re the last stop before damnation.</p>
+
+    <!-- Character Selection Section -->
+    <div class="character-selection">
+      <div class="character-list">
+        <!-- Character 1 -->
+        <div class="character-container">
+          <div class="lore-item">
+            <img src="https://cdn.glitch.global/dacc699f-e499-49cc-a99e-62079fdfadf6/exorcist.png?v=1747406189254" alt="Character 1" class="lore-image">
+            <div class="lore-attributes">
+              <h3>"Father Dave" Langford</h3>
+              <p><strong>Role:</strong> Exorcist</p>
+              <p><strong>Skill:</strong> Performs holy rites to banish demons and weaken their influence</p>
+              <p><strong>Weapons:</strong> Twin-Edged Crucifix, Incense Cannon, Echo Psalm <span class="ectos-highlight">(Unlockable)</span>, Unforgiven Hymn <span class="ectos-highlight">(NFT required)</span></p>
+              <p><strong>Shields:</strong> Sacred Bell, Cursed Chalice, Oblivion&rsquo;s Oculus <span class="ectos-highlight">(Unlockable)</span>, Saintly Crown <span class="ectos-highlight">(NFT required)</span></p>
+              <p>"The Church says &lsquo;Reverend Langford,&rsquo; but when you&rsquo;re knee-deep in a demonic infestation, formalities go out the window."</p>
+            </div>
+          </div>
+          <button class="select-character-button" onclick="selectCharacter('Father Dave Langford')">Select</button>
+        </div>
+
+        <!-- Character 2 -->
+        <div class="character-container">
+          <div class="lore-item">
+            <img src="https://cdn.glitch.global/dacc699f-e499-49cc-a99e-62079fdfadf6/occultist.png?v=1747479116168" alt="Character 2" class="lore-image">
+            <div class="lore-attributes">
+              <h3>The Blacklisted Inquisitor</h3>
+              <p><strong>Role:</strong> Occultist</p>
+              <p><strong>Skill:</strong> The Inquisitor spins the Codex overhead, its chains forming a burning sigil in the air</p>
+              <p><strong>Equipment:</strong> Chainbound Codex</p>
+              <p><strong>Weapons:</strong> Undead Lantern, Maw of the Abyss, Librorum Fist <span class="ectos-highlight">(Unlockable)</span>, Pactbreaker <span class="ectos-highlight">(NFT required)</span></p>
+              <p><strong>Shields:</strong> Mouthplate, Lamentation, Black Dagger <span class="ectos-highlight">(Unlockable)</span>, Duskglass <span class="ectos-highlight">(NFT required)</span></p>
+              <p>"The ink is dry, but your screams will keep these pages fresh. So sing, worm - sing until your voice joins the chorus bound within!"</p>
+            </div>
+          </div>
+          <button class="select-character-button" onclick="selectCharacter('The Blacklisted Inquisitor')">Select</button>
+        </div>
+
+        <!-- Character 3 -->
+        <div class="character-container">
+          <div class="lore-item">
+            <img src="https://cdn.glitch.global/dacc699f-e499-49cc-a99e-62079fdfadf6/specialist.png?v=1747479030924" alt="Character 3" class="lore-image">
+            <div class="lore-attributes">
+              <h3>Vega "Overclock" Rook</h3>
+              <p><strong>Role:</strong> Tech Specialist</p>
+              <p><strong>Skill:</strong> The specialist fires both proton blasters in parallel, creating a sustained energy bridge between the streams</p>
+              <p><strong>Equipment:</strong> The Hadron Twins</p>
+              <p><strong>Weapons:</strong> Wraith-Trap Drones, Protonic Blaster, Dissonance Grenade <span class="ectos-highlight">(Unlockable)</span>, Ecto-Plasma Flamethrower <span class="ectos-highlight">(NFT required)</span></p>
+              <p><strong>Shields:</strong> Soul Backpack, Apostle&rsquo;s USB Drive, Cloaking Belt <span class="ectos-highlight">(Unlockable)</span>, Lazarus Pen <span class="ectos-highlight">(NFT required)</span></p>
+              <p>"The Hadron Twins don&rsquo;t just fire&mdash;they rewrite the rules. You want suppression? I&rsquo;ll give you a sustained energy bridge straight to oblivion."</p>
+            </div>
+          </div>
+          <button class="select-character-button" onclick="selectCharacter('Vega Overclock Rook')">Select</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <button class="nav-button" onclick="window.location.href='index.html'">&nbsp;&#127968;&nbsp; Home</button>
+      <button class="nav-button" onclick="window.location.href='inventory.html'">&nbsp;&#128302;&nbsp; Inventory</button>
+      <button class="nav-button" onclick="window.location.href='skillweb.html'">&nbsp;&#128214;&nbsp; Grim Veins</button>
+      <button class="nav-button" onclick="window.location.href='map.html'">&nbsp;&#128506;&nbsp; Haunted Map</button>
+      <button class="nav-button" onclick="window.location.href='missions.html'">&nbsp;&#128220;&nbsp; Missions</button>
+      <button class="nav-button" onclick="window.location.href='liber-monstrorum.html'">&nbsp;&#128214;&nbsp; Liber Monstrorum</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
